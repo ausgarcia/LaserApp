@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Created by Austin Garcia
 public class TimeManager : MonoBehaviour {
     private double timer;
     public TMPro.TextMeshProUGUI timerText;
