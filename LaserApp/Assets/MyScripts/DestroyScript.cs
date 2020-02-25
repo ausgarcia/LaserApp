@@ -25,6 +25,7 @@ public class DestroyScript : MonoBehaviour {
             print("LASER");
             TM.stopTime();
             LS.stopSpawning();
+            other.gameObject.GetComponent<LaserDestroyScript>().dontDestroy();
         }
     }
 	// Update is called once per frame

@@ -3,19 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LaserDestroyScript : MonoBehaviour {
-    public int framesToWait;
+    public float secToWait;
     private int i;
+    private bool destroy;
 	// Use this for initialization
 	void Start () {
-        i = 0;
+        destroy = true;
+        StartCoroutine(timedDestroy());
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(i == framesToWait) //destroy gameobject after one frame
+        
+	}
+    IEnumerator timedDestroy()
+    {
+        yield return new WaitForSeconds(secToWait);
+        if (destroy)
         {
             Destroy(this.gameObject);
         }
-        i++;
-	}
+    }
+    public void dontDestroy()
+    {
+        destroy = false;
+    }
 }
