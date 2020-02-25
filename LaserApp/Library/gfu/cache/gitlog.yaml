@@ -1,0 +1,612 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-02-20T12:42:08.811-06:00
+  initializedAtString: 2020-02-20T12:42:08.811-06:00
+  log:
+  - commitID: 0c74377da4291099d267c4666b47b0d2dd766f87
+    mergeA: 
+    mergeB: 
+    authorName: Austin Garcia
+    authorEmail: ausgarcia@outlook.com
+    commitEmail: ausgarcia@outlook.com
+    commitName: Austin Garcia
+    summary: Added randomly spawned lasers
+    description: 
+    timeString: 2020-02-20T12:40:52.000-06:00
+    commitTimeString: 2020-02-20T12:40:52.000-06:00
+    changes:
+    - path: LaserApp\Assets\MyMaterials\Background.mat
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials\Background.mat
+      projectPath: Assets\MyMaterials\Background.mat
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts\TimeManager.cs
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts\TimeManager.cs
+      projectPath: Assets\MyScripts\TimeManager.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Scenes\SampleScene.unity
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 8a6234b409bd42ed9abe3080d642d7a9c2cb70b2
+    mergeA: 
+    mergeB: 
+    authorName: Austin Garcia
+    authorEmail: ausgarcia@outlook.com
+    commitEmail: ausgarcia@outlook.com
+    commitName: Austin Garcia
+    summary: initial commit x2
+    description: 
+    timeString: 2020-02-19T21:45:27.000-06:00
+    commitTimeString: 2020-02-19T21:45:27.000-06:00
+    changes:
+    - path: LaserApp\Assets\MyMaterials.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials.meta
+      projectPath: Assets\MyMaterials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyMaterials\Background.mat
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials\Background.mat
+      projectPath: Assets\MyMaterials\Background.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyMaterials\Background.mat.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials\Background.mat.meta
+      projectPath: Assets\MyMaterials\Background.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyMaterials\TouchSpot.mat
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials\TouchSpot.mat
+      projectPath: Assets\MyMaterials\TouchSpot.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyMaterials\TouchSpot.mat.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyMaterials\TouchSpot.mat.meta
+      projectPath: Assets\MyMaterials\TouchSpot.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyPrefabs.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyPrefabs.meta
+      projectPath: Assets\MyPrefabs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyPrefabs\TouchCollider.prefab
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyPrefabs\TouchCollider.prefab
+      projectPath: Assets\MyPrefabs\TouchCollider.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyPrefabs\TouchCollider.prefab.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyPrefabs\TouchCollider.prefab.meta
+      projectPath: Assets\MyPrefabs\TouchCollider.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts.meta
+      projectPath: Assets\MyScripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts\DestroyScript.cs
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts\DestroyScript.cs
+      projectPath: Assets\MyScripts\DestroyScript.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts\DestroyScript.cs.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts\DestroyScript.cs.meta
+      projectPath: Assets\MyScripts\DestroyScript.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts\TimeManager.cs
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts\TimeManager.cs
+      projectPath: Assets\MyScripts\TimeManager.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\MyScripts\TimeManager.cs.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\MyScripts\TimeManager.cs.meta
+      projectPath: Assets\MyScripts\TimeManager.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub.meta
+      projectPath: Assets\Plugins\GitHub.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor.meta
+      projectPath: Assets\Plugins\GitHub\Editor.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\credits.txt
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\credits.txt
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\credits.txt.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\credits.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\eula.txt
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\eula.txt
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\eula.txt.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\eula.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\libsfw.so
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\libsfw.so
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x64.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x64.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x86.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x86.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Scenes\SampleScene.unity
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\Scenes\SampleScene.unity.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\Scenes\SampleScene.unity.meta
+      projectPath: Assets\Scenes\SampleScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro.meta
+      projectPath: Assets\TextMesh Pro.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Documentation.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Documentation.meta
+      projectPath: Assets\TextMesh Pro\Documentation.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Documentation\TextMesh
+        Pro User Guide 2016.pdf
+      projectPath: Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Documentation\TextMesh
+        Pro User Guide 2016.pdf.meta
+      projectPath: Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources.meta
+      projectPath: Assets\TextMesh Pro\Resources.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials.meta
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Drop Shadow.mat
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF - Drop Shadow.mat
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Drop Shadow.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Drop Shadow.mat.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF - Drop Shadow.mat.meta
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Drop Shadow.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Outline.mat
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF - Outline.mat
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Outline.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Outline.mat.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF - Outline.mat.meta
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Outline.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF.asset
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF.asset
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF.asset.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Fonts
+        & Materials\LiberationSans SDF.asset.meta
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF.asset.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\LineBreaking
+        Following Characters.txt
+      projectPath: Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\LineBreaking
+        Following Characters.txt.meta
+      projectPath: Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\LineBreaking
+        Leading Characters.txt
+      projectPath: Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\LineBreaking
+        Leading Characters.txt.meta
+      projectPath: Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF
+        Overlay.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF
+        Overlay.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile
+        Masking.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile
+        Masking.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile
+        Overlay.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile
+        Overlay.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader.meta
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\LaserApp\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader.meta
+      projectPath: Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 68f86629aed5b4ae26f0edfeca191851d1e64082
+    mergeA: 
+    mergeB: 
+    authorName: Austin Garcia
+    authorEmail: 59805956+ausgarcia@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: 
+    timeString: 2020-02-18T13:41:42.000-06:00
+    commitTimeString: 2020-02-18T13:41:42.000-06:00
+    changes:
+    - path: .gitignore
+      fullPath: D:\ISUclasses\ArtIs475\LaserAppRepo\.gitignore
+      projectPath: ..\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
