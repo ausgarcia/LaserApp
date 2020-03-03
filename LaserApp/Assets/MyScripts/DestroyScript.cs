@@ -25,11 +25,12 @@ public class DestroyScript : MonoBehaviour {
     }
 	private void OnTriggerEnter(Collider other)
     {
-        print("COLLISION");
+        //print("COLLISION");
         if (other.gameObject.tag == "laser")
         {
-            print("LASER");
+            //print("LASER");
             TM.stopTime();
+            TM.displayPanel();
             LS.stopSpawning();
             other.gameObject.GetComponent<LaserDestroyScript>().dontDestroy();
             CircleEffect = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -43,7 +44,7 @@ public class DestroyScript : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-        if (startCircleAnim && circleSize < 400)
+        if (startCircleAnim && circleSize < 150)
         {
             circleSize += .4f;
             //CircleEffect

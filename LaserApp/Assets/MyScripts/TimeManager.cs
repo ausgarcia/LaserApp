@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //Created by Austin Garcia
 public class TimeManager : MonoBehaviour {
-    private double timer;
+    private float timer;
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI multText;
     public GameObject TouchColliderPrefab;
@@ -11,6 +12,7 @@ public class TimeManager : MonoBehaviour {
     private List<Touch> currentTouches;
     private int prevTouches;
     private bool stopped;
+    public GameObject deathPanel;
     // Use this for initialization
     void Start () {
         timer = 0;
@@ -56,5 +58,17 @@ public class TimeManager : MonoBehaviour {
     public void stopTime()
     {
         stopped = true;
+    }
+    public void displayPanel()
+    {
+        deathPanel.SetActive(true);
+    }
+    public float getTimer()
+    {
+        return timer;
+    }
+    public void restartScene()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
