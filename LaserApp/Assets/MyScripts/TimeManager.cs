@@ -8,13 +8,16 @@ public class TimeManager : MonoBehaviour {
     public TMPro.TextMeshProUGUI timerText;
     public TMPro.TextMeshProUGUI multText;
     public GameObject TouchColliderPrefab;
+    public GameObject deathPanel;
+    public GameObject personalBestText; 
+    private ScoreManager scoreMan;
     private List<GameObject> currentTouchColliders;
     private List<Touch> currentTouches;
     private int prevTouches;
     private bool stopped;
-    public GameObject deathPanel;
     // Use this for initialization
     void Start () {
+        scoreMan = this.gameObject.GetComponent<ScoreManager>();
         timer = 0;
         //timerText.GetComponent<RectTransform>() = Screen.width;
         timerText.fontSize = (int)(Screen.width / 8.0f);
@@ -62,6 +65,14 @@ public class TimeManager : MonoBehaviour {
     public void displayPanel()
     {
         deathPanel.SetActive(true);
+    }
+    public void storeTime()
+    {
+        scoreMan.addLocalScore(timer, "name");
+        if (scoreMan.checkLocalHighScore(timer))
+        {
+            personalBestText.SetActive(true);
+        }
     }
     public float getTimer()
     {

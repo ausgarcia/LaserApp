@@ -30,6 +30,7 @@ public class DestroyScript : MonoBehaviour {
         {
             //print("LASER");
             TM.stopTime();
+            TM.storeTime();
             TM.displayPanel();
             LS.stopSpawning();
             other.gameObject.GetComponent<LaserDestroyScript>().dontDestroy();
