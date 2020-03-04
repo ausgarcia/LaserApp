@@ -2,6 +2,7 @@ Android
 PlayerPath?
 D:/Unity2018/Projects/LaserApp/Builds/BuildTest1.apk
 SceneListBegin?
+Assets/Scenes/MenuScene.unity
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
 cf889fc9967542ff02be1bb64abc0b05 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
