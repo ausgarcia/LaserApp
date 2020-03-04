@@ -4,6 +4,7 @@ D:/Unity2018/Projects/LaserApp/Builds/BuildTest1.apk
 SceneListBegin?
 Assets/Scenes/MenuScene.unity
 Assets/Scenes/SampleScene.unity
+Assets/Scenes/LeaderboardScene.unity
 SceneListEnd?
 cf889fc9967542ff02be1bb64abc0b05 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 a225cc34ee7b5f0b51d003f2b05a6a14 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.ColorGrading
@@ -326,4 +327,4 @@ e1c674640f57b2a65634996f5f6ff406 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ScoreManager
+3a530ea6064b1993fbd6a8191f5882dc Assembly-CSharp.dll:.ScoreManager

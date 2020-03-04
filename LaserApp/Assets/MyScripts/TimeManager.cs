@@ -60,13 +60,17 @@ public class TimeManager : MonoBehaviour {
 	}
     public void stopTime()
     {
-        stopped = true;
+        if (!stopped)
+        {
+            stopped = true;
+            storeTime();    //inside for loop so any repeat calls are ignored
+        }
     }
     public void displayPanel()
     {
         deathPanel.SetActive(true);
     }
-    public void storeTime()
+    public void storeTime() //this is getting called multiple times for one death
     {
         scoreMan.addLocalScore(timer, "name");
         if (scoreMan.checkLocalHighScore(timer))
