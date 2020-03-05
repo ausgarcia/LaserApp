@@ -6,6 +6,7 @@ public class LaserDestroyScript : MonoBehaviour {
     public float secToWait;
     private int i;
     private bool destroy;
+    public LaserSpawner LS;
 	// Use this for initialization
 	void Start () {
         destroy = true;
@@ -21,6 +22,10 @@ public class LaserDestroyScript : MonoBehaviour {
         yield return new WaitForSeconds(secToWait);
         if (destroy)
         {
+            /*if(LS != null)
+            {
+                LS.endEffects();
+            }*/
             Destroy(this.gameObject);
         }
     }

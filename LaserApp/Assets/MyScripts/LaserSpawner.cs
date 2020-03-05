@@ -12,6 +12,7 @@ public class LaserSpawner : MonoBehaviour {
     private float warningTime;
     private bool spawning;
     private float spawnTime;
+    private LensDistortion LDsettings;
 	// Use this for initialization
 	void Start () {
         spawning = true;
@@ -37,7 +38,8 @@ public class LaserSpawner : MonoBehaviour {
             {
                 spawnTime = 1f - .2f * (int)(TM.getTimer() / 100);
             }
-            
+            //if (TM.getTimer() > 50)
+                //numLasersToSpawn = 2;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
 
 
             yield return new WaitForSeconds(spawnTime);
@@ -60,15 +62,61 @@ public class LaserSpawner : MonoBehaviour {
                 laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand);
                 laser.AddComponent<LaserDestroyScript>();
                 laser.GetComponent<LaserDestroyScript>().secToWait = 1.5f * spawnTime;
-                LensDistortion LD = PV.profile.AddSettings<LensDistortion>();
-                //LD.intensity = 60;
+                laser.GetComponent<LaserDestroyScript>().LS = this;
+                //pp effects
+                /*bool foundEffects = PV.profile.TryGetSettings<LensDistortion>(out LDsettings);
+                if (foundEffects)
+                {
+                    LDsettings.intensity.value = 60;
+                }*/
+                //StartCoroutine(lensEffect(1.5f*spawnTime));//not feeling the lens effects rn
             }
             yield return new WaitForSeconds(spawnTime*2);
         }
+    }
+    IEnumerator lensEffect(float secToWait)
+    {
+        bool foundEffects = PV.profile.TryGetSettings<LensDistortion>(out LDsettings);
+        if (foundEffects)
+        {
+            float maxInten = 60;
+            float time = 0;
+            while (time < secToWait/2)
+            {
+                if (time < secToWait / 3)
+                {
+                    LDsettings.intensity.value += 1;
+                }
+                else if (time < secToWait * 2 / 3)
+                {
+                    LDsettings.intensity.value -= 2;
+                }
+                else
+                {
+                    LDsettings.intensity.value += 1;
+                }
+
+                time += Time.deltaTime;
+                //print("about to wait: " + secToWait / maxInten);
+                //print("set intensity value: " + LDsettings.intensity.value);
+                yield return new WaitForSeconds(secToWait/maxInten);
+            }
+                
+
+        }
+        
     }
     public void stopSpawning()
     {
         spawning = false;
         //CancelInvoke(); //cancels all invokes
     }
+    /*public void endEffects()
+    {
+        bool foundEffects = PV.profile.TryGetSettings<LensDistortion>(out LDsettings);
+        if (foundEffects)
+        {
+            LDsettings.intensity.value = 0;
+        }
+    }*/
 }
