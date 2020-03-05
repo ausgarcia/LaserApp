@@ -72,7 +72,7 @@ public class TimeManager : MonoBehaviour {
     }
     public void storeTime() //this is getting called multiple times for one death
     {
-        scoreMan.addLocalScore(timer, "name");
+        scoreMan.addLocalScore(timer, scoreMan.getName());
         if (scoreMan.checkLocalHighScore(timer))
         {
             personalBestText.SetActive(true);

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class LaserSpawner : MonoBehaviour {
     public GameObject laserPrefab;
     public GameObject laserWarningPrefab;
     public TimeManager TM;
+    public PostProcessVolume PV;
     private int numLasersToSpawn;
     private float warningTime;
     private bool spawning;
@@ -30,11 +32,8 @@ public class LaserSpawner : MonoBehaviour {
     {
         while (spawning)
         {
-            if(TM == null)//WHY IS THE GAMEOBJECT FOUND
-            {
-                print("whaaaaat");
-            }
-            if(TM.getTimer() < 500)//have to make sure spawntime > 0 //BUT THE COMPONENT ISNT
+            
+            if(TM.getTimer() < 500)//have to make sure spawntime > 0 
             {
                 spawnTime = 1f - .2f * (int)(TM.getTimer() / 100);
             }
@@ -61,6 +60,8 @@ public class LaserSpawner : MonoBehaviour {
                 laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand);
                 laser.AddComponent<LaserDestroyScript>();
                 laser.GetComponent<LaserDestroyScript>().secToWait = 1.5f * spawnTime;
+                LensDistortion LD = PV.profile.AddSettings<LensDistortion>();
+                //LD.intensity = 60;
             }
             yield return new WaitForSeconds(spawnTime*2);
         }

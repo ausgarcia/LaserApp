@@ -338,7 +338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1344395873455406, guid: 4f106c68cb73e07449cb5dcb09edb80d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f106c68cb73e07449cb5dcb09edb80d, type: 2}
@@ -1847,6 +1847,7 @@ MonoBehaviour:
   laserWarningPrefab: {fileID: 1344395873455406, guid: 48a034cee90afa746bee47e69ce8d537,
     type: 2}
   TM: {fileID: 1796916453}
+  PV: {fileID: 0}
 --- !u!114 &1796916456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1869,3 +1870,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af3a57a715c952459d6727aa0307e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaderboardContent: {fileID: 0}
+  scorebox: {fileID: 0}
