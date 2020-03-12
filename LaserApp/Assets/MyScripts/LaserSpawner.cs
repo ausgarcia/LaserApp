@@ -39,9 +39,9 @@ public class LaserSpawner : MonoBehaviour {
                 spawnTime = 1f - .2f * (int)(TM.getTimer() / 100);
             }
             //if (TM.getTimer() > 50)
-                //numLasersToSpawn = 2;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
+            //numLasersToSpawn = 2;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
 
-
+            Vector2 spawnPosition = new Vector2();
             yield return new WaitForSeconds(spawnTime);
             for (int i = 0; i < numLasersToSpawn; i++)
             {
@@ -51,18 +51,22 @@ public class LaserSpawner : MonoBehaviour {
                 float spawnX = Random.Range
                     (Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).x, Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, 0)).x);
 
-                Vector2 spawnPosition = new Vector2(spawnX, spawnY);
+                spawnPosition = new Vector2(spawnX, spawnY);
                 float rand = Random.Range(0f, 180f);
                 GameObject laserWarning = Instantiate(laserWarningPrefab, spawnPosition, Quaternion.identity);
                 laserWarning.transform.eulerAngles = new Vector3(laserWarning.transform.eulerAngles.x, laserWarning.transform.eulerAngles.y, rand);
                 laserWarning.AddComponent<LaserDestroyScript>();
-                laserWarning.GetComponent<LaserDestroyScript>().secToWait = warningTime+.01f;
+                laserWarning.GetComponent<LaserDestroyScript>().secToWait = warningTime + .01f;
+            }
                 yield return new WaitForSeconds(warningTime);
+            for (int i = 0; i < numLasersToSpawn; i++)
+            {
                 GameObject laser = Instantiate(laserPrefab, spawnPosition, Quaternion.identity);
                 laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand);
                 laser.AddComponent<LaserDestroyScript>();
                 laser.GetComponent<LaserDestroyScript>().secToWait = 1.5f * spawnTime;
                 laser.GetComponent<LaserDestroyScript>().LS = this;
+            }
                 //pp effects
                 /*bool foundEffects = PV.profile.TryGetSettings<LensDistortion>(out LDsettings);
                 if (foundEffects)
@@ -70,7 +74,7 @@ public class LaserSpawner : MonoBehaviour {
                     LDsettings.intensity.value = 60;
                 }*/
                 //StartCoroutine(lensEffect(1.5f*spawnTime));//not feeling the lens effects rn
-            }
+            
             yield return new WaitForSeconds(spawnTime*2);
         }
     }
