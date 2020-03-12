@@ -38,10 +38,12 @@ public class LaserSpawner : MonoBehaviour {
             {
                 spawnTime = 1f - .2f * (int)(TM.getTimer() / 100);
             }
-            //if (TM.getTimer() > 50)
-            //numLasersToSpawn = 2;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
-
-            Vector2 spawnPosition = new Vector2();
+            if (TM.getTimer() > 200)//add lasers to spawn, every too
+                numLasersToSpawn = (int)(TM.getTimer() / 200) + 1;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
+            //GameObject[] lasers = new GameObject[numLasersToSpawn];
+            //GameObject[] warnings = new GameObject[numLasersToSpawn];
+            Vector2[] spawnPosition = new Vector2[numLasersToSpawn];
+            float[] rand = new float[numLasersToSpawn];
             yield return new WaitForSeconds(spawnTime);
             for (int i = 0; i < numLasersToSpawn; i++)
             {
@@ -51,18 +53,18 @@ public class LaserSpawner : MonoBehaviour {
                 float spawnX = Random.Range
                     (Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).x, Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, 0)).x);
 
-                spawnPosition = new Vector2(spawnX, spawnY);
-                float rand = Random.Range(0f, 180f);
-                GameObject laserWarning = Instantiate(laserWarningPrefab, spawnPosition, Quaternion.identity);
-                laserWarning.transform.eulerAngles = new Vector3(laserWarning.transform.eulerAngles.x, laserWarning.transform.eulerAngles.y, rand);
+                spawnPosition[i] = new Vector2(spawnX, spawnY);
+                rand[i] = Random.Range(0f, 180f);
+                GameObject laserWarning = Instantiate(laserWarningPrefab, spawnPosition[i], Quaternion.identity);
+                laserWarning.transform.eulerAngles = new Vector3(laserWarning.transform.eulerAngles.x, laserWarning.transform.eulerAngles.y, rand[i]);
                 laserWarning.AddComponent<LaserDestroyScript>();
                 laserWarning.GetComponent<LaserDestroyScript>().secToWait = warningTime + .01f;
             }
                 yield return new WaitForSeconds(warningTime);
             for (int i = 0; i < numLasersToSpawn; i++)
             {
-                GameObject laser = Instantiate(laserPrefab, spawnPosition, Quaternion.identity);
-                laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand);
+                GameObject laser = Instantiate(laserPrefab, spawnPosition[i], Quaternion.identity);
+                laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand[i]);
                 laser.AddComponent<LaserDestroyScript>();
                 laser.GetComponent<LaserDestroyScript>().secToWait = 1.5f * spawnTime;
                 laser.GetComponent<LaserDestroyScript>().LS = this;
