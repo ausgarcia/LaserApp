@@ -34,9 +34,9 @@ public class LaserSpawner : MonoBehaviour {
         while (spawning)
         {
             
-            if(TM.getTimer() < 500)//have to make sure spawntime > 0 
+            if(TM.getTimer() < 1000)//have to make sure spawntime > 0 
             {
-                spawnTime = 1f - .2f * (int)(TM.getTimer() / 100);
+                spawnTime = 1f - .1f * (int)(TM.getTimer() / 100);
             }
             if (TM.getTimer() > 200)//add lasers to spawn, every too
                 numLasersToSpawn = (int)(TM.getTimer() / 200) + 1;//changing the number of lasers to spawn doesnt work super well with the coroutine waits, adjust for harder levels
@@ -47,7 +47,7 @@ public class LaserSpawner : MonoBehaviour {
             yield return new WaitForSeconds(spawnTime);
             for (int i = 0; i < numLasersToSpawn; i++)
             {
-                warningTime = .7f * spawnTime;
+                warningTime = .8f * spawnTime;
                 float spawnY = Random.Range
                     (Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).y, Camera.main.ScreenToWorldPoint(new Vector2(0, Screen.height)).y);
                 float spawnX = Random.Range
