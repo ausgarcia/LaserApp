@@ -32,6 +32,7 @@ public class DestroyScript : MonoBehaviour {
             TM.stopTime();
             TM.displayPanel();
             LS.stopSpawning();
+            LS.playHitSound();
             other.gameObject.GetComponent<LaserDestroyScript>().dontDestroy();
             CircleEffect = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             

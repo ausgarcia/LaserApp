@@ -13,8 +13,15 @@ public class LaserSpawner : MonoBehaviour {
     private bool spawning;
     private float spawnTime;
     private LensDistortion LDsettings;
-	// Use this for initialization
-	void Start () {
+    public AudioSource LaserSound;
+    public AudioSource WarningSound;
+    public AudioSource HitSound;
+    // Use this for initialization
+    void Start () {
+        bool muteVal = this.gameObject.GetComponent<ScoreManager>().getMuteVal();
+        LaserSound.mute = muteVal;
+        WarningSound.mute = muteVal;
+        HitSound.mute = muteVal;
         spawning = true;
         //InvokeRepeating("spawnLaser", 1, 2);
         numLasersToSpawn = 1;
@@ -25,10 +32,6 @@ public class LaserSpawner : MonoBehaviour {
         //TM = GameObject.Find("Controller").GetComponent<TimeManager>();
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     IEnumerator spawnLaser()
     {
         while (spawning)
@@ -56,6 +59,7 @@ public class LaserSpawner : MonoBehaviour {
                 spawnPosition[i] = new Vector2(spawnX, spawnY);
                 rand[i] = Random.Range(0f, 180f);
                 GameObject laserWarning = Instantiate(laserWarningPrefab, spawnPosition[i], Quaternion.identity);
+                WarningSound.Play();
                 laserWarning.transform.eulerAngles = new Vector3(laserWarning.transform.eulerAngles.x, laserWarning.transform.eulerAngles.y, rand[i]);
                 laserWarning.AddComponent<LaserDestroyScript>();
                 laserWarning.GetComponent<LaserDestroyScript>().secToWait = warningTime + .01f;
@@ -64,6 +68,7 @@ public class LaserSpawner : MonoBehaviour {
             for (int i = 0; i < numLasersToSpawn; i++)
             {
                 GameObject laser = Instantiate(laserPrefab, spawnPosition[i], Quaternion.identity);
+                LaserSound.Play();
                 laser.transform.eulerAngles = new Vector3(laser.transform.eulerAngles.x, laser.transform.eulerAngles.y, rand[i]);
                 laser.AddComponent<LaserDestroyScript>();
                 laser.GetComponent<LaserDestroyScript>().secToWait = 1.5f * spawnTime;
@@ -117,6 +122,13 @@ public class LaserSpawner : MonoBehaviour {
         spawning = false;
         //CancelInvoke(); //cancels all invokes
     }
+
+    public void playHitSound()
+    {
+        HitSound.Play();
+        return;
+    }
+
     /*public void endEffects()
     {
         bool foundEffects = PV.profile.TryGetSettings<LensDistortion>(out LDsettings);
