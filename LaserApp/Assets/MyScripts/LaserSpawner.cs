@@ -16,6 +16,7 @@ public class LaserSpawner : MonoBehaviour {
     public AudioSource LaserSound;
     public AudioSource WarningSound;
     public AudioSource HitSound;
+    public Material touchSpotMat;
     // Use this for initialization
     void Start () {
         bool muteVal = this.gameObject.GetComponent<ScoreManager>().getMuteVal();

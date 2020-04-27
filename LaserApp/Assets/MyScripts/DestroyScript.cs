@@ -11,6 +11,7 @@ public class DestroyScript : MonoBehaviour {
     private bool destroy;
     private float circleSize;
     private GameObject CircleEffect;
+    private Material touchSpotMat;
 
     // Use this for initialization
     void Start () {
@@ -18,6 +19,7 @@ public class DestroyScript : MonoBehaviour {
         manager = GameObject.Find("Controller");
         TM = manager.GetComponent<TimeManager>();
         LS = manager.GetComponent<LaserSpawner>();
+        touchSpotMat = LS.touchSpotMat;
         startCircleAnim = false;
         destroy = true;
         circleSize = 0.01f;
@@ -35,7 +37,7 @@ public class DestroyScript : MonoBehaviour {
             LS.playHitSound();
             other.gameObject.GetComponent<LaserDestroyScript>().dontDestroy();
             CircleEffect = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            
+            CircleEffect.GetComponent<MeshRenderer>().material = touchSpotMat;
             CircleEffect.transform.localScale= new Vector3(circleSize, circleSize, 1.0f);
             CircleEffect.transform.position = this.transform.position;
             startCircleAnim = true;
