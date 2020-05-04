@@ -9,7 +9,8 @@ public class TimeManager : MonoBehaviour {
     public TMPro.TextMeshProUGUI multText;
     public GameObject TouchColliderPrefab;
     public GameObject deathPanel;
-    public GameObject personalBestText; 
+    public GameObject personalBestText;
+    public GameObject instructionText;
     private ScoreManager scoreMan;
     private List<GameObject> currentTouchColliders;
     private List<Touch> currentTouches;
@@ -25,6 +26,7 @@ public class TimeManager : MonoBehaviour {
         multText.gameObject.GetComponent<RectTransform>().localPosition = new Vector3(0, -timerText.fontSize+20, 0);
         prevTouches = 0;
         stopped = false;
+        instructionText.SetActive(true);
     }
 	
 	// Update is called once per frame
@@ -34,6 +36,7 @@ public class TimeManager : MonoBehaviour {
         {
             if (Input.touchCount > 0)
             {
+                //instructionText.SetActive(false);//add bool so this only happens once, THIS LINE BROKE THE APP?
                 //print("touched");
 
                 multiplier = Input.touchCount;
@@ -50,6 +53,7 @@ public class TimeManager : MonoBehaviour {
                     finger.transform.eulerAngles = new Vector3(90, 0, 0);
                     finger.AddComponent<DestroyScript>();// Destroys collider after one frame
                 }
+                instructionText.SetActive(false);//add bool so this only happens once, THIS LINE BROKE THE APP?
             }
             else if (!multText.text.Equals("x0"))
             {
